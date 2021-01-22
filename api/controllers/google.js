@@ -1,13 +1,13 @@
 // module for parsing form data and file uploads
 const formidable = require("formidable");
-const { duckIt } = require("node-duckduckgo");
+const google = require("google-search-results");
 
 // return search results to frontend
 exports.read = async (req, res) => {
   try {
-    const result = await duckIt(req.body.searchTerm);
-
-    return res.json(result.data);
+    google(req.body.searchTerm, function (result) {
+      return res.json(result);
+    });
   } catch (err) {
     return res.json(err);
   }
