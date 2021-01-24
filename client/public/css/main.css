@@ -1602,7 +1602,7 @@ span.flatpickr-weekday {
   -ms-flex-pack: center;
   justify-content: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-start;
   font-family: "Poppins", sans-serif;
   background: url("../img/Searchs_002.png");
   background-size: cover;

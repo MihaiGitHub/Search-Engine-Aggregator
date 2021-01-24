@@ -9,6 +9,7 @@ require("dotenv").config();
 // import routes
 const duckduckgoRoutes = require("./routes/duckduckgo");
 const googleRoutes = require("./routes/google");
+const bingRoutes = require("./routes/bing");
 
 // app
 const app = express();
@@ -22,6 +23,7 @@ app.use(cors()); // allow api to handle requests coming from different origins
 // use routes as middleware
 app.use("/api", duckduckgoRoutes);
 app.use("/api", googleRoutes);
+app.use("/api", bingRoutes);
 
 const port = process.env.PORT || 8000;
 

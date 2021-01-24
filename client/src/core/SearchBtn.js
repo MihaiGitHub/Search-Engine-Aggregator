@@ -1,8 +1,8 @@
 import React from "react";
 
-const SearchBtn = () => {
+const SearchBtn = (props) => {
   return (
-    <button className="btn-search" type="button">
+    <button onClick={props.searchSubmit} className="btn-search" type="button">
       SEARCH
     </button>
   );

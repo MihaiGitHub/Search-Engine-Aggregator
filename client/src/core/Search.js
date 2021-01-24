@@ -2,11 +2,11 @@ import React from "react";
 import SearchBar from "./SearchBar";
 import SearchBtn from "./SearchBtn";
 
-const Search = () => {
+const Search = (props) => {
   return (
     <div className="inner-form">
       <div className="input-field first-wrap">
-        <SearchBar />
+        <SearchBar searchTerm={props.searchTerm} />
       </div>
 
       {/*   <div className="input-field fouth-wrap">
@@ -28,7 +28,7 @@ const Search = () => {
             </select>
           </div> */}
       <div className="input-field fifth-wrap">
-        <SearchBtn />
+        <SearchBtn searchSubmit={props.searchSubmit} />
       </div>
     </div>
   );
