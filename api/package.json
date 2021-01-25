@@ -1,27 +1,25 @@
 {
-  "name": "api",
+  "name": "zoner-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Middle layer for Zoner progressive web application",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node src/index.js",
+    "dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "author": "TemplarIT",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.21.1",
     "bing-search-api": "0.0.4",
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.5",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "formidable": "^1.2.2",
     "google-search-results": "^1.0.0",
-    "morgan": "^1.10.0",
+    "mysql2": "^2.1.0",
     "node-duckduckgo": "^2.0.13",
-    "nodemon": "^2.0.7"
+    "sequelize": "^6.3.5"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.0.1",
+    "nodemon": "^2.0.2"
   }
 }

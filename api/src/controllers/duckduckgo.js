@@ -1,5 +1,3 @@
-// module for parsing form data and file uploads
-const formidable = require("formidable");
 const { duckIt } = require("node-duckduckgo");
 
 // return search results to frontend

@@ -1,5 +1,3 @@
-// module for parsing form data and file uploads
-const formidable = require("formidable");
 var Bing = require("bing-search-api");
 var client = new Bing();
 
